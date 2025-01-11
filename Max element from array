@@ -1,0 +1,14 @@
+//Max element from array 
+arrayEleSize =int(input("enter array size"))
+array = []
+for i in range(arrayEleSize):
+    element =int(input(f"Enter element {i + 1}: "))
+    array.append(element)
+
+max_ele=array[0]
+
+for j in array:
+    if j> max_ele:
+        max_ele = j
+print("Maximum element is:", max_ele)
+
