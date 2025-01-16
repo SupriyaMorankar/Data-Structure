@@ -1,0 +1,5 @@
+arr = [4,6,7,3,3,4]
+for i in arr:
+    if arr.count(i)>1:
+        arr.remove(i)
+print(arr)
