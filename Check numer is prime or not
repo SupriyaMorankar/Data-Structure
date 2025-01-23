@@ -1,30 +1,13 @@
-
 def prime(num):
+    if num <= 1:  # Numbers less than or equal to 1 are not prime
+        return False
     for i in range(2, num):
-        if num < 2:
+        if num % i == 0:  # Check if divisible by any number other than 1 and itself
             return False
-        else:
-            if num%2==0:
-                return False
-            else:
-                return True
     return True
 
-num = int(input("enter number"))
-if prime(num):
-    print(num,"is prime number")
-else:
-    print(num,"is not prime number")
-    
-    
-
-          
-        
-
-
-
-
-
-
-
-
+# Test cases
+print(prime(1))  # Output: False
+print(prime(2))  # Output: True
+print(prime(9))  # Output: False
+print(prime(17)) # Output: True
